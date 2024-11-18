@@ -15,8 +15,8 @@ Inspired by test task.
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd [project-directory]
+git clone https://github.com/deadbyback/yii2-logger-module-example
+cd yii2-logger-module-example
 ```
 
 2. Install dependencies:

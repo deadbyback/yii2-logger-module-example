@@ -40,6 +40,8 @@ final class EmailLogger implements LoggerInterface
         if (!$sent) {
             throw new EmailLoggerException('Failed to send log message via email');
         }
+
+        echo 'EmailLogger | '. $formattedMessage;
     }
 
     public function sendByLogger(string $message, LoggerType $loggerType): void

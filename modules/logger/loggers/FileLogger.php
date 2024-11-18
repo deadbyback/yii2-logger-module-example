@@ -38,6 +38,8 @@ final class FileLogger implements LoggerInterface
                 sprintf('Unable to write to log file: %s', $this->logFile)
             );
         }
+
+        echo 'FileLogger | '. $formattedMessage;
     }
 
     public function sendByLogger(string $message, LoggerType $loggerType): void

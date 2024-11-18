@@ -26,6 +26,8 @@ final class DatabaseLogger implements LoggerInterface
             'level' => 'info'
         ];
 
+        echo 'DbLogger | '. $message;
+
         if (count($this->messageQueue) >= $this->batchSize) {
             $this->flush();
         }
